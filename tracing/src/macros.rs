@@ -694,9 +694,7 @@ macro_rules! event {
         static __CALLSITE: $crate::callsite::DefaultCallsite = $crate::callsite2! {
             name: $crate::__macro_support::concat!(
                 "event ",
-                file!(),
                 ":",
-                line!()
             ),
             kind: $crate::metadata::Kind::EVENT,
             target: $target,
@@ -855,9 +853,7 @@ macro_rules! event {
         static __CALLSITE: $crate::callsite::DefaultCallsite = $crate::callsite2! {
             name: $crate::__macro_support::concat!(
                 "event ",
-                file!(),
                 ":",
-                line!()
             ),
             kind: $crate::metadata::Kind::EVENT,
             target: $target,
@@ -1188,9 +1184,7 @@ macro_rules! enabled {
             static __CALLSITE: $crate::callsite::DefaultCallsite = $crate::callsite2! {
                 name: $crate::__macro_support::concat!(
                     "enabled ",
-                    file!(),
                     ":",
-                    line!()
                 ),
                 kind: $kind.hint(),
                 target: $target,
